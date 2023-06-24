@@ -7,7 +7,7 @@ package-lock.json
 # Coveralls
 .nyc_output
 coverage
-
+.env.local
 # Benchmarking
 benchmarks/graphs
 
