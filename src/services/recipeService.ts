@@ -3,7 +3,7 @@ import { json } from "stream/consumers";
 export async function getRecipe(ingredients : string[]) : Promise<string>{
     try {
         //fetch initial recipe data
-        const data = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.FOOD_API}&ingredients=${ingredients.join(",+")}&number=1`);
+        const data = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.FOOD_API}&ingredients=${ingredients.join(",+")}&number=8`);
         const json = await data.json();
         
         for (let i = 0; i < json.length; i++) {
