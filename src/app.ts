@@ -18,6 +18,7 @@ app.use(express.json());
 
 app.get<{}, MessageResponse>('/', (req, res) => {
   res.json({
+    status: 200,
     message: 'API Running',
   });
 });
